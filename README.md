@@ -12,7 +12,7 @@ A simple Python project with a FastAPI backend and AI/agent integration. The rep
 - `backend/src/database/database.py` - MongoDB client setup, environment-driven credentials, and collections definitions.
 - `requirements.txt` - project dependency file; verify encoding and package list before installing.
 
-## Setup
+## Setup.
 
 1. Create and activate a Python virtual environment.
 2. Install dependencies from `requirements.txt` once the file contents are confirmed.
@@ -45,6 +45,7 @@ Then visit `http://127.0.0.1:8000/` to see the root endpoint response.
 - `main.py` is currently empty and can be used as the project's top-level entrypoint.
 
 ## Recommended Improvements
+
 
 - Fix or regenerate `requirements.txt` with the actual dependencies.
 - Add usage examples for the AI agents and database access.

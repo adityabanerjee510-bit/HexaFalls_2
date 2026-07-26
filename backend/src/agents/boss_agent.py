@@ -6,10 +6,16 @@ from pymongo import MongoClient
 from datetime import datetime, timezone
 import uuid
 import os
+from pymongo.server_api import ServerApi
+user_name = os.getenv("USER_NAME")
+user_passward = os.getenv("PASSWARD")
+
+uri = f"mongodb+srv://{user_name}:{user_passward}@pymongo-1.johx7kf.mongodb.net/?appName=Pymongo-1"
+# Create a new client and connect to the server
 
 load_dotenv()
 
-mongo_client = MongoClient(os.getenv("MONGODB_URI"))
+mongo_client = MongoClient(uri, server_api=ServerApi('1'))
 
 db = mongo_client["AI_Orchestrator"]
 
@@ -99,4 +105,4 @@ if __name__ == "__main__":
         """
     )
 
-    print(result)
+    print(result) 
